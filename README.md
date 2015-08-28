@@ -18,5 +18,5 @@ Everything else is under the MIT license by [@dirkfabisch](https://github.com/di
 
 Contact
 -------
-You can contact the author [by email](mailto:admin@exceltricks.com) or [by Twitter](https://twitter.com/excel_tricks).
+Please contact the author [by email](mailto:admin@exceltricks.com) or [by Twitter](https://twitter.com/excel_tricks).
 
