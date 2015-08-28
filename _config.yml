@@ -3,7 +3,8 @@ markdown: redcarpet
 highlighter: pygments
 gems:
   - jemoji
-  
+  - jekyll-feed
+
 # Site settings
 title: "Excel Tricks"
 description: > # this means to ignore newlines until "email:"
