@@ -1,9 +1,5 @@
 <aside class="sidebar-wrapper">
   <h2>Tags</h2>
-  <!-- <span class="tag"><a href="#">Finance</a></span>
-  <span class="tag"><a href="#">VLOOKUP</a></span>
-  <span class="tag"><a href="#">Pivot Tables</a></span> -->
-
   {% assign sorted_tags = (site.tags | sort:0) %}
   {% for tag in sorted_tags %}
     <span class="tag"><a href="/tag/{{ tag | first }}">{{ tag | first }}</a></span>

@@ -3,12 +3,18 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
+  {% include header.html %}
   
   <body itemscope itemtype="http://schema.org/Article">
-    {% include header.html %}
     <main class="content" role="main">
-      <article class="post">
-        {% if page.image %}
+      <article class="post post-wrapper">
+        {% if page.title != "About" %}
+          <div class="page-wrapper">
+        {% else %}
+          <div class="page-wrapper" style="width: 100%;">
+        {% endif %}
+        <div class="content-wrapper">
+<!--         {% if page.image %}
         <div class="article-image">
           <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
             Article Image
@@ -24,7 +30,7 @@
             </div>
           </div>
         </div>
-        {% else %}
+        {% else %} 
         <div class="noarticleimage">
           <div class="post-meta">
             <h1 class="post-title">{{ page.title }}</h1>
@@ -36,14 +42,21 @@
         </div>
         <br>
         <br>
-        <br>
-        {% endif %}
+        <br> 
+        {% endif %} -->
         <section class="post-content">
           <a name="topofpage"></a>
+          <h1 class="post-title">{{ page.title }}</h1>
           {{content}}
         </section>
+        </div>
+        </div>
+        {% if page.title != "About" %}
+          {% include sidebar.html %}
+        {% endif %}
       </article>
     </main>
+    {% include footer.html %}
     {% include javascripts.html %}
   </body>
 </html>

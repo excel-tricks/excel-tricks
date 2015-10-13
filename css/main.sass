@@ -146,6 +146,10 @@ body
 .post-wrapper
   background-color: #eee !important
 
+.page-wrapper
+  width: 70%
+  float: left
+
 .content
   width: 80%
   max-width: 1200px
@@ -285,6 +289,7 @@ body
     background-color: #fff
   .content-wrapper
     padding: $rs*1.5
+    background: #fff
   .article-image
     position: absolute
     background-color: #000
@@ -416,8 +421,8 @@ body
       font-style: normal
       font-size: 32px
       line-height: 1.2
-      padding-top: 31px
-      margin-bottom: 4px
+      // padding-top: 31px
+      margin-bottom: $rs
     p
       font-weight: 400
       font-style: normal
@@ -429,6 +434,8 @@ body
       -webkit-hyphens: auto
       -moz-hyphens: auto
       hyphens: auto
+      &:last-child
+        padding-bottom: 0px
     a
       color: #333
       text-decoration: underline
@@ -584,6 +591,9 @@ footer
       &:hover 
         color: #fff
 
+
+.archive_list
+  margin-bottom: $rs*1.5
 
 .bottom-closer
   width: 100%
