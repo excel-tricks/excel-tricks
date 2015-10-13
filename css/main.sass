@@ -13,6 +13,7 @@ $rs: 16px
 $font-serif: Linux Libertine
 $font-sans: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif
 
+$my-orange: #F77C2F
 
 @mixin respond-to($breakpoint)
   @media only screen and (max-width: $breakpoint + px)
@@ -31,6 +32,7 @@ body
   font-family: $font-sans
   margin: 0
   padding: 0
+  background-color: #333
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
   -moz-font-feature-settings: "liga=1, dlig=1"
@@ -75,14 +77,17 @@ body
     text-indent: -9999px
 
 .blog-header
-  width: 100%
-  max-width: 640px
-  margin: 0 auto
+  width: 80%
+  height: 54px
+  max-width: 1200px
+  margin: $rs auto
   position: relative
   padding: 0
   @include box-sizing(border-box)
   @include respond-to(800)
-    padding: 0 $rs
+  padding: 0 $rs*1.5
+  a
+    text-decoration: none
   .blog-logo
     width: $rs*7.5
     height: $rs*7.5
@@ -101,15 +106,16 @@ body
     box-shadow: 0 1px 1px rgba(0,0,0,0.3)
   .blog-title
     margin: 0
-    padding: $rs*5.25 $rs $rs/2
+    margin-left: -4px
     font-size: 50px
-    text-align: center
+    text-align: left
     font-weight: 700
-    letter-spacing: -2px
+    letter-spacing: -1px
     outline: 0
     line-height: 50px
     word-break: break-word
-    color: #333
+    color: #fff
+    float: left
   .blog-description
     margin: 0 0 20px
     padding: 0 $rs*2
@@ -119,27 +125,42 @@ body
     text-align: center
     font-weight: 400
   .custom-links
-    margin: 0 0 50px
-    text-align: center
-    color: #ccc
+    margin-top: 27px
+    float: right
+    color: #eee
     a
       text-decoration: none
-      color: #999
+      color: #eee
       &:hover
-        color: #333
+        color: $my-orange
+
+.frame
+  clear: both
+  background-color: #eee
+  padding: $rs*1.5
+
+.article-wrapper
+  width: 70%
+  float: left
+
+.post-wrapper
+  background-color: #eee !important
 
 .content
-  width: 100%
-  max-width: 640px
+  width: 80%
+  max-width: 1200px
   margin: 0 auto
+  background-color: #eee
   @include box-sizing(border-box)
   @include respond-to(800)
-    padding: 0 $rs*2
+    padding: 0 $rs*1.5
   article
-    padding: 40px 0
-    border-bottom: 1px solid #f2f2f0
+    background-color: #fff
+    padding: $rs*1.5
+    margin-bottom: $rs*1.5
     &:last-child
       border-bottom: 0px
+      margin-bottom: 0px
     .post-title
       letter-spacing: -0.02em
       font-weight: 700
@@ -169,6 +190,10 @@ body
         text-decoration: none
         &:hover
           text-decoration: underline
+
+
+
+
 .container.featured
   padding-bottom: 40px
 
@@ -191,13 +216,32 @@ body
 
 .pagination
   text-align: center
-  padding: $rs*3 0 0
-  font-size: $rs/4*3
+  padding: 0 0 $rs*1.5
+  font-size: $rs
+  background-color: #eee
+  color: #333
+  // .newer-posts
+  //   float: left
+  // .older-posts
+  //   float: right
   a
-    color: #999
     text-decoration: none
+    color: #333
     &:hover
-      color: #333
+      color: #999
+
+.pagination-wrapper
+  padding: 0 $rs 
+  position: relative
+  text-align: center
+  a, span 
+    margin: 0 5px 
+    position: absolute
+    top: 0
+  .newer-posts
+    left: $rs*1.5
+  .older-posts
+    right: $rs*1.5
 
 .post-reading
   position: absolute
@@ -227,11 +271,20 @@ body
   color: #999
   line-height: $rs*1.1
   a
-    color: #666
+    color: #999
     text-decoration: none
     &:hover
-      color: #333
+      color: $my-orange
+
 .post
+  background-color: #eee
+  overflow: auto
+  .post-wrapper
+    background-color: #eee
+  .article-wrapper
+    background-color: #fff
+  .content-wrapper
+    padding: $rs*1.5
   .article-image
     position: absolute
     background-color: #000
@@ -309,7 +362,7 @@ body
   .noarticleimage
     .post-meta
       font-family: $font-sans
-      padding-top: 60px
+      padding-bottom: $rs
     .post-title
       font-weight: 700
       font-style: normal
@@ -344,6 +397,7 @@ body
   .post-content
     width: 100%
     font-family: $font-serif
+    background-color: #fff
     color: #333
     h1, h2, h3
       font-family: $font-sans
@@ -378,6 +432,8 @@ body
     a
       color: #333
       text-decoration: underline
+      &:hover
+        color: $my-orange
     img
       max-width: 100%
       margin: 0 auto
@@ -506,17 +562,31 @@ body
           padding-bottom: 18px
           font-weight: 700
           color: #333
+
 .share
-  text-align: right
-  padding: 20px 0 0
-  a
-    text-decoration: none
-    color: #bbb
-    padding-left: 12px
-    .hidden
-      display: none
+  span 
+    background-color: #55acee
+    padding: 8px
+    color: white
     &:hover
-      color: #333
+      background-color: #4B9AD6
+  a
+    text-decoration: none 
+
+.tag
+  // display: table
+  background-color: $my-orange
+  margin: $rs*0.5 $rs*1.5
+  padding: 8px 
+  font-size: $rs
+  &:last-child
+    margin-bottom: 0px
+  a 
+    text-decoration: none 
+    color: #333332
+    &:hover 
+      color: #fff
+
 
 .bottom-closer
   width: 100%
@@ -581,6 +651,35 @@ body
       line-height: 44px
       padding: 0 18px
 
+.sidebar-wrapper
+  width: 28%
+  width: calc(30% - $rs*3)
+  padding-bottom: $rs*1.5
+  background-color: #fff
+  float: right
+  h2
+    letter-spacing: -0.02em
+    font-weight: 700
+    font-style: normal
+    display: block
+    font-size: 28px
+    line-height: 1.1
+    margin: $rs*1.5
+    color: #333332
+  .tag
+    display: table
+    background-color: $my-orange
+    margin: $rs*0.5 $rs*1.5
+    padding: 8px 
+    font-size: $rs
+    &:last-child
+      margin-bottom: 0px
+    a 
+      text-decoration: none 
+      color: #333332
+      &:hover 
+        color: #fff
+
 #disqus_thread
   margin-top: 50px
 .post-tag-articleimage
@@ -603,3 +702,4 @@ pre
     border: 0
     padding-right: 0
     padding-left: 0
+

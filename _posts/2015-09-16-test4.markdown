@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Test Post 4!"
+date:   2015-09-16
+categories: jekyll update
+tags: featured
+---
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet fringilla orci. Curabitur a arcu a tellus aliquet tristique ac nec nibh. Fusce eu lobortis lorem. Nulla auctor enim purus, sit amet dapibus lorem dapibus ac. Fusce ac gravida nibh. Sed euismod erat non purus iaculis tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean sit amet condimentum felis, sed feugiat mauris. Duis posuere risus in eros vulputate volutpat. Vestibulum tincidunt feugiat ex, eget vulputate enim commodo vitae. Nam scelerisque aliquet eleifend. Praesent nec iaculis justo, sed laoreet neque.
+
+Nam pharetra justo vel ipsum rutrum, et pharetra orci facilisis. Integer lectus eros, lacinia et ex vel, tincidunt vulputate lorem. Duis in lorem ac lacus porttitor accumsan. Etiam a molestie velit. Donec fermentum eget lectus ac lobortis. Nulla semper pretium lacus sit amet feugiat. Aenean at scelerisque felis.
+
+Proin vitae magna dolor. Phasellus ut luctus metus. Praesent urna orci, vehicula a ultrices a, sodales in sem. In maximus ipsum lacus, nec sodales ligula mattis et. Suspendisse pretium nibh eu felis cursus, ac vulputate risus auctor. Nunc consectetur lectus at consequat vestibulum. Nullam lectus nunc, tempor ac mauris vitae, auctor aliquet libero. Sed nec dignissim ipsum, et ultrices justo. Nullam metus dui, pharetra at neque vel, hendrerit ullamcorper massa. Vivamus mattis dolor sit amet justo pretium, at convallis neque accumsan. Phasellus egestas molestie mauris quis venenatis. Donec ultricies, ante sed scelerisque pretium, magna nisl pharetra risus, eu venenatis nulla magna quis magna. Morbi et justo vel enim feugiat porttitor vitae ornare quam.
+
+Duis vestibulum vitae nulla eu accumsan. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean consectetur tempor lacinia. Ut nisl mi, consequat id sapien eget, efficitur lobortis nisl. Aenean diam quam, dignissim vel pulvinar at, placerat eget leo. Morbi mollis mi nec lobortis dictum. Phasellus neque ipsum, eleifend nec magna sed, efficitur vehicula leo. Proin tincidunt volutpat risus. Aenean varius vel libero sit amet aliquet. Nam lacinia purus sed nulla tempor, at placerat urna aliquam. Duis tortor tellus, ornare sit amet elementum eget, vestibulum at urna.
+
+Vivamus posuere, quam vel fringilla bibendum, lacus mi condimentum magna, quis fermentum justo risus semper velit. Maecenas lobortis tellus quis sapien egestas, eget mollis nunc mollis. Nunc elementum ipsum lacus, a vehicula felis ullamcorper a. Quisque in condimentum velit, non iaculis ante. In iaculis, magna vel ullamcorper pharetra, neque risus suscipit est, sagittis lacinia ligula elit tristique tellus. Donec in arcu at ipsum porta eleifend. Aliquam erat volutpat. In tortor lacus, dignissim a sagittis a, elementum et tortor. Duis eget libero nisl. Proin vel finibus lorem, et ullamcorper eros.
+

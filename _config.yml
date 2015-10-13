@@ -20,7 +20,7 @@ name: 'Nicholas Jackson'
 author: 'Nicholas Jackson'
 author_image: "/assets/images/author.jpg"
 
-paginate:	10
+paginate:	5
 
 url: "http://exceltricks.com" # the base hostname & protocol for your site
 baseurl: ""
