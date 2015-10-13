@@ -73,11 +73,9 @@
 
         <footer class="post-footer">
           <section class="post-tags">
-            <h2>Post tags</h2>
-              {% for tag in post.tags %}
-                <p>Test</p>
-                <span class="tag"><a href="#">{{ tag }}</a></span>
-                <span class="tag"><a href="#">Peanut Butter</a></span>
+            <h2>Post tags:</h2>
+              {% for tag in page.tags %}
+                <span class="tag"><a href="/tag/{{ tag }}">{{ tag }}</a></span>
               {% endfor %}
           </section>
 
