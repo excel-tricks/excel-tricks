@@ -28,7 +28,7 @@ baseurl: ""
 twitter_handle: '@excel_tricks'
 
 #fill in disqus shortname to use disqus
-#disqus: disqus-shortname
+disqus: excelTricks
 
 # social icons and sharing options
 social:
